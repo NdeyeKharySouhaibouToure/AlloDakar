@@ -71,7 +71,7 @@ export function OnboardingScreen() {
             alt="Allô Dakar"
             width={220}
             height={66}
-            className="h-14 w-auto brightness-0 invert"
+            className="h-14 w-auto"
           />
         </div>
 
@@ -95,9 +95,8 @@ export function OnboardingScreen() {
           {slides.map((_, index) => (
             <div
               key={index}
-              className={`h-2 rounded-full transition-all ${
-                index === currentSlide ? "w-8 bg-primary-foreground" : "w-2 bg-primary-foreground/40"
-              }`}
+              className={`h-2 rounded-full transition-all ${index === currentSlide ? "w-8 bg-primary-foreground" : "w-2 bg-primary-foreground/40"
+                }`}
             />
           ))}
         </div>

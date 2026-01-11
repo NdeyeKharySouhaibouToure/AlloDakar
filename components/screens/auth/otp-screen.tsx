@@ -118,7 +118,7 @@ export function OTPScreen() {
                 alt="Allô Dakar"
                 width={200}
                 height={60}
-                className="h-12 w-auto brightness-0 invert"
+                className="h-12 w-auto"
               />
             </div>
             <h1 className="text-3xl font-bold text-primary-foreground mb-2">Vérification</h1>
