@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/images/chatgpt-20image-2011-20janv.png",
-    apple: "/apple-icon.png",
+    apple: "/images/chatgpt-20image-2011-20janv.png",
   },
 }
 

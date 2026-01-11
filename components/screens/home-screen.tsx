@@ -28,13 +28,15 @@ export function HomeScreen() {
 
         <div className="relative z-10">
           <div className="flex items-center justify-between mb-8">
-            <Image
-              src="/images/chatgpt-20image-2011-20janv.png"
-              alt="Allô Dakar"
-              width={140}
-              height={40}
-              className="h-8 w-auto"
-            />
+            <div className="bg-white/90 p-2 rounded-xl backdrop-blur-sm">
+              <Image
+                src="/images/chatgpt-20image-2011-20janv.png"
+                alt="Allô Dakar"
+                width={140}
+                height={40}
+                className="h-10 w-auto"
+              />
+            </div>
             <Link href="/profile">
               <Button variant="ghost" size="icon" className="text-primary-foreground">
                 <Users className="h-5 w-5" />

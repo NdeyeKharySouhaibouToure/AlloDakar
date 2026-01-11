@@ -113,13 +113,15 @@ export function OTPScreen() {
           {/* Logo */}
           <div className="text-center mb-12">
             <div className="flex justify-center mb-6">
-              <Image
-                src="/images/chatgpt-20image-2011-20janv.png"
-                alt="Allô Dakar"
-                width={200}
-                height={60}
-                className="h-12 w-auto"
-              />
+              <div className="bg-white/90 p-4 rounded-2xl backdrop-blur-sm shadow-xl">
+                <Image
+                  src="/images/chatgpt-20image-2011-20janv.png"
+                  alt="Allô Dakar"
+                  width={200}
+                  height={60}
+                  className="h-14 w-auto"
+                />
+              </div>
             </div>
             <h1 className="text-3xl font-bold text-primary-foreground mb-2">Vérification</h1>
             <p className="text-primary-foreground/80 text-sm">

@@ -61,13 +61,15 @@ export function RegisterScreen() {
           {/* Logo */}
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
-              <Image
-                src="/images/chatgpt-20image-2011-20janv.png"
-                alt="Allô Dakar"
-                width={180}
-                height={54}
-                className="h-10 w-auto"
-              />
+              <div className="bg-white/90 p-4 rounded-2xl backdrop-blur-sm shadow-xl">
+                <Image
+                  src="/images/chatgpt-20image-2011-20janv.png"
+                  alt="Allô Dakar"
+                  width={180}
+                  height={54}
+                  className="h-12 w-auto"
+                />
+              </div>
             </div>
             <h1 className="text-3xl font-bold text-primary-foreground mb-2">Créer un compte</h1>
             <p className="text-primary-foreground/80 text-sm">Rejoignez la communauté Allô Dakar</p>

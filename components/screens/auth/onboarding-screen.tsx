@@ -66,13 +66,15 @@ export function OnboardingScreen() {
       <div className="flex-1 flex flex-col items-center justify-center relative z-10">
         {/* Logo */}
         <div className="mb-12">
-          <Image
-            src="/images/chatgpt-20image-2011-20janv.png"
-            alt="Allô Dakar"
-            width={220}
-            height={66}
-            className="h-14 w-auto"
-          />
+          <div className="bg-white/90 p-6 rounded-3xl backdrop-blur-sm shadow-xl inline-block">
+            <Image
+              src="/images/chatgpt-20image-2011-20janv.png"
+              alt="Allô Dakar"
+              width={220}
+              height={66}
+              className="h-16 w-auto"
+            />
+          </div>
         </div>
 
         {/* Slide Content */}
