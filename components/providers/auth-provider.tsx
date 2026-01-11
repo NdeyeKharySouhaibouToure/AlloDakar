@@ -4,14 +4,23 @@ import type React from "react"
 import { createContext, useContext, useState, useEffect } from "react"
 import type { User } from "@/lib/types/database"
 
+interface AuthResponse {
+  success?: boolean
+  error?: string
+  user?: User
+  session?: any
+  message?: string
+  data?: any
+}
+
 interface AuthContextType {
   user: User | null
   loading: boolean
-  sendOTP: (phone: string) => Promise<unknown>
-  verifyOTP: (phone: string, otp: string) => Promise<unknown>
-  register: (data: Partial<User>) => Promise<unknown>
+  sendOTP: (phone: string) => Promise<AuthResponse>
+  verifyOTP: (phone: string, otp: string) => Promise<AuthResponse>
+  register: (data: Partial<User>) => Promise<AuthResponse>
   logout: () => Promise<void>
-  updateProfile: (updates: Partial<User>) => Promise<unknown>
+  updateProfile: (updates: Partial<User>) => Promise<AuthResponse>
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined)
